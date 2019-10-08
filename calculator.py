@@ -18,11 +18,11 @@ calc_entry.grid(row=0, column=0, columnspan=5)
 
 #логика калькулятора
 def calc(key):
-    global memory
+    global memory#FIXME: What for?
     if key == "=":
 #исключение написания слов
         str1 = "-+0123456789.*/)("
-        if calc_entry.get()[0] not in str1:
+        if calc_entry.get()[0] not in str1:#FIXME: seems ***/// is a valid number for first ?
             calc_entry.insert(END, "First symbol is not number!")
             messagebox.showerror("Error!", "You did not enter the number!")
 #исчисления
