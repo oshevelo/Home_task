@@ -1,5 +1,6 @@
 class Car:
-    distance = int(input())
+    distance = int(input())#FIXME: VERY bad idea you are stopping even importing of this class:(
+    #FIXME: Value errors
     if distance > 99999:
         print("Error!")
     open_doors = int(input())
